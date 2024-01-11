@@ -1,12 +1,45 @@
 @import 'variables';
 @import './libs/basic.scss';
+@import 'fonts.scss';
+
+
+body {
+    background-color: $black;
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+    width: calc(100vw - 330px);
+    height: 100%;
+    background-color: $black;
+    margin: 25px auto;
+    border-radius: 10px;
+    max-width: 1400px;
+}
 
 .header {
     background-color: $black;
-    .list {
-        display: flex;
-        .link {
-            color: $white;
+    display: flex;
+    .interpreter {
+        padding-right: 88px;
+    }
+    .header_desc {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-right: 76px;
+    }
+    .header_nav{
+        margin-right: 230px;
+        .list {
+            display: flex;
+            gap: 31px;   
+            .link {
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 130%;
+            }
         }
     }
 }
