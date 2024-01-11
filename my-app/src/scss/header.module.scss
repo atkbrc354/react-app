@@ -1,0 +1,12 @@
+@import 'variables';
+@import './libs/basic.scss';
+
+.header {
+    background-color: $black;
+    .list {
+        display: flex;
+        .link {
+            color: $white;
+        }
+    }
+}
