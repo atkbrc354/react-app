@@ -1,5 +1,6 @@
 import styleHeader from '../scss/header.module.scss';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import profileIcon from '../assets/logo-header.svg';
 
 
 function Header() {
@@ -24,8 +25,8 @@ function Header() {
           </div>
           <div className={styleHeader.header_bottom}>
             <div className={styleHeader.logo}>
-              <img src="../public/image/logo-header.svg'" alt="logo" />
-              <p>Playnchill</p>
+              <img src={profileIcon} alt="logo" />
+              <p className={styleHeader.logo_desc}>Playnchill</p>
             </div>
           </div>
         </div>
