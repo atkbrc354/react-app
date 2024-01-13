@@ -4,9 +4,12 @@
 
 
 body {
+    position: relative;
     background-color: $black;
     font-family: 'Manrope', sans-serif;
 }
+
+
 
 .wrapper {
     width: calc(100vw - 330px);
@@ -40,7 +43,7 @@ body {
         }
     
         .interpreter::after {
-            content: url('../../public/image/interpreter-icons.svg');
+            content: url('../assets/header-icons/interpreter-icons.svg');
             display: flex;
             margin-left: 5px;
             margin-top: -2px;
@@ -53,7 +56,6 @@ body {
             white-space: nowrap;
         }
         .header_nav{
-            
             .list {
                 display: flex;
                 gap: 31px;   
@@ -69,7 +71,6 @@ body {
         .profile {
             white-space: nowrap;
             display: flex;
-            flex-direction: end;
             color: $white;
             text-align: right;
             font-size: 16px;
@@ -79,14 +80,58 @@ body {
         .profile::after {
             margin-top: -6px;
             margin-left: 25px;
-            content: url('../../public/image/profile-icons.svg');
+            content: url('../assets/header-icons/profile-icons.svg');
         }
     }
     .header_bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 24px;
         .logo {
             display: flex;
             align-items: center;
             gap: 11px;
         }
+        .logo_desc {
+            color: $white;
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 90%;
+        }
+    }
+    .input {
+        position: relative;
+        max-width: 648px;
+        width: 100%;
+        height: 66px;
+        padding: 22px 25px 23px 30px;
+        color: $input-color;
+        font-size: 16px;
+        border: none;
+        border-radius: 15px;
+        background: rgba(196, 196, 196, 0.05);
+        background-image: url('../assets/header-icons/search-icon.svg');
+        background-repeat: no-repeat;
+        background-position: right 25px center;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .header_bottom_desc {
+        color: $color-grin;
+        text-align: right;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%; 
+    }
+
+    .header_line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid rgba(255, 255, 255, 0.10);
     }
 }

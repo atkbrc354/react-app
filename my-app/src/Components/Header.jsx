@@ -1,6 +1,8 @@
 import styleHeader from '../scss/header.module.scss';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import profileIcon from '../assets/logo-header.svg';
+import profileIcon from '../assets/header-icons/logo-header.svg';
+import likeIcon from '../assets/header-icons/like-icons.svg';
+import basketIcon from '../assets/header-icons/basket-icons.svg';
 
 
 function Header() {
@@ -28,7 +30,12 @@ function Header() {
               <img src={profileIcon} alt="logo" />
               <p className={styleHeader.logo_desc}>Playnchill</p>
             </div>
+            <input className={styleHeader.input} placeholder='Поиск' type="text" />
+            <p className={styleHeader.header_bottom_desc}>Бесплатно</p>
+            <img src={likeIcon} alt="likeIcon" />
+            <img src={basketIcon} alt="basket" />
           </div>
+          <div className={styleHeader.header_line}></div>
         </div>
       </div>
     );
