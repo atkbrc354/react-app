@@ -1,13 +1,20 @@
 import './App.scss';
-import Header from './Components/Header';
-import Slider from './Components/Slider';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.scss';
+import HomePage from './HomePage';
+import Basket from './Basket';
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-        <Slider />
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/basket" element={<Basket />} />
+        </Routes>
     </div>
+    </Router>
   );
 }
 
