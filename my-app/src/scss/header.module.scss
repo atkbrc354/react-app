@@ -4,9 +4,13 @@
 
 
 body {
-    position: relative;
     background-color: $black;
     font-family: 'Manrope', sans-serif;
+}
+
+
+.container {
+    position: relative;
 }
 
 
@@ -25,6 +29,7 @@ body {
     display: flex;
     gap: 21px;
     flex-direction: column;
+    margin-bottom: 40px;
     .header_top {
         display: flex;
         justify-content: space-between;

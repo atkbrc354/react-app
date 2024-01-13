@@ -1,7 +1,7 @@
 import Header from './Components/Header';
 import Slider from './Components/Slider';
 
-function Basket() {
+function HomePage() {
   return (
     <div>
         <Header />
@@ -10,4 +10,4 @@ function Basket() {
   );
 }
 
-export default Basket;
+export default HomePage;
