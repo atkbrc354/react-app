@@ -6,7 +6,7 @@ function Slider() {
       <div className={styleSlider.slider}>
 
       </div>
-      </div>
+    </div>
         );
         }
 
