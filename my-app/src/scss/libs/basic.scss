@@ -17,6 +17,15 @@
     -webkit-font-smoothing: antialiased;
     color: $black;
   }
+
+  .wrapper {
+    width: calc(100vw - 330px);
+    height: 100%;
+    background-color: $black;
+    margin: 0px auto;
+    border-radius: 10px;
+    max-width: 1400px;
+  }
   
   a,
   span,

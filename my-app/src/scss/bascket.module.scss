@@ -1,3 +1,61 @@
 @import 'variables';
 @import './libs/basic.scss';
 @import 'fonts.scss';
+
+
+
+h1.basket_title {
+    color: $white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 130%; 
+    margin-bottom: 30px;
+    span {
+        color: $color-grin;
+    }
+}
+
+.basket_box {
+    display: flex;
+    width: 100%;
+    .basket_box_left {
+        max-width: 893px;
+        width: 100%;
+        .basket_box_top {
+            border-radius: 15px;
+            background: url('../assets/image/basket_box_top.png');
+            max-width: 893px;
+            width: 100%;
+            padding: 30px;
+            .basket_box_title {
+                color: $white;
+                font-size: 32px;
+                font-weight: 800;
+                line-height: 130%;
+                margin-bottom: 10px;
+            }
+            .basket_box_desc {
+                color: $white;
+                font-size: 20px;
+                font-weight: 500;
+                max-width: 663px;
+                width: 100%;
+                line-height: 130%; 
+                margin-bottom: 30px;
+            }
+            .basket_box_btn {
+                padding: 13px 25px 16px 25px;
+                border-radius: 10px;
+                color: $black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 130%
+            }
+
+            .basket_box_btn:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+}
