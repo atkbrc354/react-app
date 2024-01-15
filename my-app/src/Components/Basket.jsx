@@ -1,4 +1,5 @@
 import styleBasket from '../scss/bascket.module.scss';
+import { Link } from 'react-router-dom';
 
 
 function Basket() {
@@ -15,7 +16,10 @@ function Basket() {
                     </div>
                 </div>
                 <div className={styleBasket.basket_box_rigth}>
-
+                    <p className={styleBasket.desc_top_rigth}>5 товаров</p>
+                    <p className={styleBasket.price_top_rigth}>4 999 Р</p>
+                    <button className={styleBasket.btn_top_rigth}>Оформить заказ</button>
+                    <p className={styleBasket.desc_bottom_rigth}>Покупая данный товар, я подтверждаю,что ознакомился и согласен с <Link className={styleBasket.link} to="/">условиями </Link> и <Link className={styleBasket.link} to="/">условия магазина</Link></p>
                 </div>
             </div>
         </div>

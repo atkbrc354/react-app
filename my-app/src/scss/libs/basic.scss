@@ -11,6 +11,23 @@
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
+  *::-webkit-scrollbar {
+    width: 1.221rem;
+    height: 0.421rem;
+    border-left: 0.421rem solid rgb(0 0 0 / 0%);
+    background-clip: content-box;
+    background-color: rgb(255 255 255 / 33%);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    height: 2.947rem;
+    width: 2.947rem;
+    border-radius: 0;
+    border-left: 0.421rem solid rgb(0 0 0 / 0%);
+    background-clip: content-box;
+    background-color: rgb(255 255 255 / 33%);
+}
   
   body {
     -moz-osx-font-smoothing: grayscale;
@@ -19,10 +36,9 @@
   }
 
   .wrapper {
-    width: calc(100vw - 330px);
     height: 100%;
     background-color: $black;
-    margin: 0px auto;
+    margin: 0px 330px;
     border-radius: 10px;
     max-width: 1400px;
   }
