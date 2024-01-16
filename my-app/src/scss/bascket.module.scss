@@ -16,18 +16,21 @@ h1.basket_title {
 }
 
 .basket_box {
-    display: flex;
+    display: grid;
+    grid-template-columns: 893px 321px;
     width: 100%;
-    gap: 50px;
+    justify-content: space-between;
     .basket_box_left {
         max-width: 893px;
         width: 100%;
+        height: 244px;
         .basket_box_top {
             border-radius: 15px;
-            background: url('../assets/image/basket_box_top.png');
+            background: url('../assets/image/basket_box_top.png') no-repeat;
             max-width: 893px;
             width: 100%;
             padding: 30px;
+            margin-bottom: 20px;
             .basket_box_title {
                 color: $white;
                 font-size: 32px;
@@ -50,7 +53,8 @@ h1.basket_title {
                 color: $black;
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 130%
+                line-height: 130%;
+                transition: all 200ms ease-in-out;
             }
 
             .basket_box_btn:hover {
@@ -60,50 +64,76 @@ h1.basket_title {
         }
     }
     .basket_box_rigth {
-        border-radius: 30px;
-        border: 2px solid rgba(255, 255, 255, 0.10);
-        padding: 30px;
-        width: 321px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        .desc_top_rigth {
-            color: $white;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 130%;
-            margin-bottom: 25px;
+        .basket_box_rigth_top {
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.10);
+            padding: 30px;
+            width: 321px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            .desc_top_rigth {
+                color: $white;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 130%;
+                margin-bottom: 25px;
+            }
+            .price_top_rigth {
+                color: $white;
+                text-align: center;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 135%;
+                margin-bottom: 25px;
+            }
+            .btn_top_rigth {
+                border-radius: 15px;
+                padding: 18px 53px;
+                white-space: nowrap;
+                background: rgba(119, 190, 29, 0.10);
+                border: none;
+                color: $color-grin;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 130%;
+                margin-bottom: 30px;
+                transition: all 200ms ease-in-out;
+            }
+            .btn_top_rigth:hover {
+                cursor: pointer;
+                background: rgba(104, 163, 27, 0.1);
+            }
+            .desc_bottom_block {
+                display: flex;
+                gap: 5px;
+                .desc_bottom_rigth {
+                    color: rgba(255, 255, 255, 0.30);
+                    font-size: 16px;
+                    display: inline-block;
+                    width: 244px;
+                    font-weight: 500;
+                    line-height: 160%;
+                }
+                .link {
+                    color: $color-blue;
+                }
+            }
+            .desc_bottom_block::before {
+                content: url('../assets/bascket-icons/check-mark.svg');
+                margin-right: 5px;
+            }
         }
-        .price_top_rigth {
-            color: $white;
-            text-align: center;
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 135%;
-            margin-bottom: 25px;
-        }
-        .btn_top_rigth {
-            border-radius: 15px;
-            padding: 18px 53px;
-            white-space: nowrap;
-            background: rgba(119, 190, 29, 0.10);
-            border: none;
-            color: $color-grin;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 130%;
-            margin-bottom: 30px;
-        }
-        .desc_bottom_rigth {
-            color: rgba(255, 255, 255, 0.30);
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 160%;
-        }
-        .link {
-            color: $color-blue;
+        .basket_box_rigth_bottom {
+            border-radius: 30px;
+            width: 321px;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.10);
         }
     }
 }
